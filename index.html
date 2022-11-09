@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS assignment</title>
+
+    <link rel="stylesheet" href="./class_style.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="navegation-bar">
+            <div class="logo">
+                <h1 id="saasLogo">SaaS Kit</h1>
+            </div>
+            <div class="user">
+                <div class="photo"><img src="./attachments/profile photos/figmaprofile/avatar/image 2.jpg"
+                        alt="Avatar user"></div>
+                <div class="details">
+                    <h4 id="profile-name">Sierra Ferguson</h4>
+                    <small id="email">s.ferguson@gmail.com</small>
+                </div>
+            </div>
+            <div class="listAndToggels">
+                <ul class="navegationbar-list">
+                    <li>
+                        <div id="listDashboard">Dashboard</div>
+                    </li>
+                    <li>
+                        <div id="listTasks">Tasks</div>
+                    </li>
+                    <li>
+                        <div id="listEmail">Email</div>
+                    </li>
+                    <li>
+                        <div id="listContacts">Contacts<div>
+                    </li>
+                    <li>
+                        <div id="listChat">Chat</div>
+                    </li>
+                    <li>
+                        <div id="listDeals">Deals</div>
+                    </li>
+                </ul>
+                <div class="toggleAndsettings">
+                    <div id="listSettings">Settings</div>
+                    <div class="toggle-sidebar">
+                        <h6>Toggle sidebar</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="search">
+                <div class="searchIcon">
+                    <input class="searchText" type="text" placeholder="Global search">
+                </div>
+                <div class="notafication">
+                    <img src="./attachments/search/notifications.svg" alt="icon notafication">
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="left-container">
+                    <div class="leftop">
+                        <div class="progress">
+                            <div class="completed">
+                                <small>8 task completed out of 10</small>
+                                <div class="dropdown">
+                                    <label for="dropdown1">Show:</label>
+                                    <select name="dropdown1" id="dropdown1">
+                                        <option value="This Week">This Week</option>
+                                        <option value="Next Week">Next Week</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="w3-light-grey w3-round">
+                                    <div class="w3-container w3-round w3-green"
+                                        style="height:8px; width:80%; margin-top: 1.5%;"></div>
+                                </div>
+                            </div>
+                            <div class="today">
+                                <h4>23 December, Sunday</h4>
+                            </div>
+                        </div>
+
+                        <div class="calander">
+                            <div class="days">
+                                <div class="dayName">Sun</div>
+                                <div class="dayNumber">23</div>
+                            </div>
+                            <div id="monday" class="days">
+                                <div class="dayName">Mon</div>
+                                <div class="dayNumber">24</div>
+                            </div>
+                            <div class="days">
+                                <div class="dayName">Tue</div>
+                                <div class="dayNumber">25</div>
+                            </div>
+                            <div class="days">
+                                <div class="dayName">Wed</div>
+                                <div class="dayNumber">26</div>
+                            </div>
+                            <div class="days">
+                                <div class="dayName">Thu</div>
+                                <div class="dayNumber">27</div>
+                            </div>
+                            <div class="days">
+                                <div class="dayName">Fri</div>
+                                <div class="dayNumber">28</div>
+                            </div>
+                            <div class="days">
+                                <div class="dayName">Sat</div>
+                                <div class="dayNumber">29</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="leftbottom">
+                        <div class="allTasks">
+                            <div class="taskCard">
+                                <div class="tasktop">
+                                    <div class="task-title">
+                                        <h5>Send benefit review by Sunday</h5>
+                                        <div class="due">
+                                            <h6 id="dueTitle">Due date:</h6>
+                                            <h6 id="dueDate">December 23, 2018</h6>
+                                        </div>
+                                    </div>
+                                    <div class="task-type">
+                                        <small>Reminder</small>
+                                    </div>
+                                </div>
+                                <div class="taskbottom">
+                                    <div class="profile-name">
+                                        <img src="./attachments/profile photos/figmaprofile/george.png"
+                                            alt="Avatar1 img">
+                                        George Fields
+                                    </div>
+                                    <div class="editAndStatus">
+                                        <div class="editAndDelete">
+                                            <svg class="editDeleteIcon" width="23" height="23" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1152_388)">
+                                                    <path
+                                                        d="M2 11.5V14H4.5L11.8733 6.62662L9.37333 4.12662L2 11.5ZM13.8067 4.69329C14.0667 4.43329 14.0667 4.01329 13.8067 3.75329L12.2467 2.19329C11.9867 1.93329 11.5667 1.93329 11.3067 2.19329L10.0867 3.41329L12.5867 5.91329L13.8067 4.69329Z"
+                                                        fill="#C2CFE0" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1152_388">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg class="editDeleteIcon" width="23" height="23" viewBox="0 0 16 16"
+                                                fill="#109CF1" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1152_389)">
+                                                    <path
+                                                        d="M3.99998 12.6667C3.99998 13.4 4.59998 14 5.33331 14H10.6666C11.4 14 12 13.4 12 12.6667V4.66667H3.99998V12.6667ZM12.6666 2.66667H10.3333L9.66665 2H6.33331L5.66665 2.66667H3.33331V4H12.6666V2.66667Z"
+                                                        fill="#C2CFE0" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1152_389">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="status-button">Completed</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="task2" class="taskCard">
+                                <div class="tasktop">
+                                    <div class="task-title">
+                                        <h5>Invite to office meet-up</h5>
+                                        <div class="due">
+                                            <h6 id="dueTitle">Due date:</h6>
+                                            <h6 id="dueDate">December 23, 2018</h6>
+                                        </div>
+                                    </div>
+                                    <div class="task-type">
+                                        <small>Call</small>
+                                    </div>
+                                </div>
+                                <div class="taskbottom">
+                                    <div class="profile-name">
+                                        <img src="./attachments/profile photos/figmaprofile/rebecca.png" alt="">
+                                        Rebecca Moore
+                                    </div>
+                                    <div class="editAndStatus">
+                                        <div class="editAndDelete">
+                                            <svg class="editDeleteIcon" width="23" height="23" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1152_388)">
+                                                    <path
+                                                        d="M2 11.5V14H4.5L11.8733 6.62662L9.37333 4.12662L2 11.5ZM13.8067 4.69329C14.0667 4.43329 14.0667 4.01329 13.8067 3.75329L12.2467 2.19329C11.9867 1.93329 11.5667 1.93329 11.3067 2.19329L10.0867 3.41329L12.5867 5.91329L13.8067 4.69329Z"
+                                                        fill="#C2CFE0" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1152_388">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg class="editDeleteIcon" width="23" height="23" viewBox="0 0 16 16"
+                                                fill="#109CF1" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1152_389)">
+                                                    <path
+                                                        d="M3.99998 12.6667C3.99998 13.4 4.59998 14 5.33331 14H10.6666C11.4 14 12 13.4 12 12.6667V4.66667H3.99998V12.6667ZM12.6666 2.66667H10.3333L9.66665 2H6.33331L5.66665 2.66667H3.33331V4H12.6666V2.66667Z"
+                                                        fill="#C2CFE0" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1152_389">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="status-button">Ended</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="taskCard">
+                                <div class="tasktop">
+                                    <div class="task-title">
+                                        <h5>Office meet-up</h5>
+                                        <div class="due">
+                                            <h6 id="dueTitle">Due date:</h6>
+                                            <h6 id="dueDate">December 23, 2018</h6>
+                                        </div>
+                                    </div>
+                                    <div class="task-type">
+                                        <small>Event</small>
+                                    </div>
+                                </div>
+                                <div class="taskbottom">
+                                    <div class="profile-name">
+                                        <img src="./attachments/profile photos/figmaprofile/lindsey.png" alt="">
+                                        Lindsey Stroud
+                                    </div>
+                                    <div class="editAndStatus">
+                                        <div class="editAndDelete">
+                                            <svg class="editDeleteIcon" width="23" height="23" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1152_388)">
+                                                    <path
+                                                        d="M2 11.5V14H4.5L11.8733 6.62662L9.37333 4.12662L2 11.5ZM13.8067 4.69329C14.0667 4.43329 14.0667 4.01329 13.8067 3.75329L12.2467 2.19329C11.9867 1.93329 11.5667 1.93329 11.3067 2.19329L10.0867 3.41329L12.5867 5.91329L13.8067 4.69329Z"
+                                                        fill="#C2CFE0" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1152_388">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg class="editDeleteIcon" width="23" height="23" viewBox="0 0 16 16"
+                                                fill="#109CF1" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1152_389)">
+                                                    <path
+                                                        d="M3.99998 12.6667C3.99998 13.4 4.59998 14 5.33331 14H10.6666C11.4 14 12 13.4 12 12.6667V4.66667H3.99998V12.6667ZM12.6666 2.66667H10.3333L9.66665 2H6.33331L5.66665 2.66667H3.33331V4H12.6666V2.66667Z"
+                                                        fill="#C2CFE0" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1152_389">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="status-button">Completed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show-more">
+                            <h5>Show More</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="right-top">
+                        <div class="graph-title">
+                            <h5>Deals</h5>
+                            <div class="dropdown">
+                                <label for="dropdown2">Show:</label>
+                                <select class="dropdown" name="dropdown2" id="dropdown2">
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Weekly">Weekly</option>
+                                    <option value="Daily">Daily</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="closedDeals">
+                            <small>Closed deals</small>
+                        </div>
+                        <div class="deals">
+                            <img src="./attachments/tasks_img/deals_graphic.svg" alt="deals">
+                        </div>
+                    </div>
+                    <div class="right-bottom">
+                        <div class="graph-title">
+                            <h5>Tasks</h5>
+                            <div class="dropdown">
+                                <label for="dropdown2">Show:</label>
+                                <select class="dropdown" name="dropdown2" id="dropdown2">
+                                    <option value="This Month">This Month</option>
+                                    <option value="This Week">This Week</option>
+                                    <option value="This Day">This Day</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="tasksGraph">
+                            <img src="./attachments/tasks_img/tasks_chart.svg" alt="deals">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

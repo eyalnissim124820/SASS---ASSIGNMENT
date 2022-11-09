@@ -1,0 +1,872 @@
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif; 
+
+    user-select: none;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.body {
+    display: flex;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* SIDE - BAR */
+.navegation-bar {
+
+    width: 20%;
+    height: 100%;
+
+    min-width: 290px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* COMPANY LOGO */
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+    height: 8%;
+    min-height: 63px;
+
+    min-height: 49px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-left: 10%;
+
+    /* padding-top: ; */
+    
+}
+
+#saasLogo{
+    font-family: 'Open Sans',sans-serif;
+
+    color: #109CF1;
+    font-weight: 400;
+    height: 100%;
+    min-height:54px ;
+    margin-top: 2%;
+    margin-bottom: 2px;
+}
+
+/* USER PROFILE */
+
+.user {
+    padding-top: 5%;
+    height: 12%;
+    min-height: 94.5px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 70%;
+}
+
+#profile-name {
+    margin: 0;
+    color: #192A3E;
+    font-weight: 500;
+
+}
+
+#email {
+    color: #90A0B7;
+    font-size:1em;
+    
+}
+.photo{
+    width: 30%;
+}
+
+.photo img {
+    height: 60px;
+    min-height: 60px;
+    width: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+}
+
+
+/* MANU TOGGLES */
+
+.listAndToggels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 80%;
+
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.navegation-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    gap: 25px;
+
+    padding-top: 12%;
+    padding-bottom: 6%;
+
+    list-style: none;
+}
+
+.navegation-bar ul li {
+    color: #334D6E;
+    font-size: 1em;
+    
+    display: flex;
+    align-items: center;
+}
+
+.navegation-bar ul li div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: left;
+    padding-left: 32px;
+
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+/* ICON BACKGROUNDS */
+.navegationbar-list li div:hover{
+    color: #109CF1;
+}
+
+
+#listDashboard {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-dashboard.svg);
+}
+
+#listDashboard:hover {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-dashboard-hover.svg);
+}
+
+#listTasks {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-tasks.svg);
+}
+
+#listTasks:hover {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-tasks-hover.svg);
+}
+
+#listEmail {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-email.svg);
+}
+
+#listEmail:hover {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-email-open-hover.svg);
+}
+
+#listContacts {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-contacts.svg);
+}
+
+#listContacts:hover {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-contacts-hover.svg);
+}
+
+#listChat {
+    background-image: url(./attachments/side_bar/icon/menu/Vector-chat.svg);
+}
+
+#listChat:hover{
+    background-image: url(./attachments/side_bar/icon/menu/Vector-chat-hover.svg);
+}
+
+#listDeals{
+   background-image: url(./attachments/side_bar/icon/menu/deals.svg);
+}
+
+#listDeals:hover{
+   background-image: url(./attachments/side_bar/icon/menu/deals-hover.svg);
+}
+
+
+.toggleAndsettings{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+    border-top: 1px solid #EBEFF2;
+}
+
+.toggleAndsettings div{
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-position: left;
+    padding-left: 32px;
+}
+
+#listSettings{
+    margin-top: 25px;
+    color: #334D6E;
+    background-image: url(./attachments/side_bar/icon/menu/settings.svg);
+}
+
+#listSettings:hover{
+    background-image: url(./attachments/side_bar/icon/menu/settings-hover.svg);
+    color: #109CF1;
+    cursor: pointer;
+}
+
+
+
+.toggle-sidebar {
+    display: flex;
+    gap: 14px;
+
+    font-weight: 500;
+    color: #90A0B7;
+    align-items: center;
+
+    background-image: url(./attachments/side_bar/icon/menu/toggle.svg);
+}
+
+.toggle-sidebar:hover{
+    background-image: url(./attachments/side_bar/icon/menu/toggle-hover.svg);
+    color: #109CF1;
+}
+
+
+.dashboard {
+    flex-basis: 1;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+}
+
+.search {
+    height: 8%;
+    min-height: 63px;
+    width: 100%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding-right: 4%;
+
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.searchIcon {
+    width: 100%;
+}
+
+.searchText {
+    background:transparent;
+    background-image: url(./attachments/search/search.svg);
+    background-repeat: no-repeat;
+    background-position: 2.2%;
+
+    width: 100%;
+    border: none;
+    padding-left: 5%;
+
+}
+
+
+.searchText:focus {
+    outline: none;
+    user-select: text;
+    color: #90A0B7;
+}
+
+.searchText::placeholder {
+    color: #90A0B7;
+    font-weight: 400;
+}
+
+
+
+.main-container {
+    flex: 1;
+    display: flex;
+
+    height: 92%;
+    min-height: 725px;
+    width: 100%;
+   
+    background-color: #e5e5e56d;
+
+    padding: 2%;
+
+    gap: 2.5%;
+}
+
+@media screen and (max-width:1100px) {
+    .navegation-bar {
+        display: none;
+    }
+
+    .main-container {
+        flex-wrap: wrap;
+    }
+}
+
+.left-container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.129);
+    border-radius: 4px;
+
+    height: 100%;
+    min-height: 680px;
+    width: 60%;
+}
+
+.leftop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 30%;
+    min-height: 204px;
+    padding: 3%;
+    padding-top: 2%;
+    
+    border-radius: 4px;
+    
+    background-color: white;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.completed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed small{
+    font-size:1em;
+}
+
+.dropdown label{
+    color: #6A707E;
+    font-weight: 300;
+    margin-right: 2px;
+    font-size: 1em;
+}
+
+.dropdown select{
+    border: none;
+    
+    background-color: white;
+    color: #109CF1;
+    
+    font-size: 1em;
+    font-weight: 200;
+
+    cursor: pointer;
+}
+
+.dropdown select:hover{
+    color: #0c71b0;
+}
+
+
+
+
+/* TEST!!!*/
+.calander{
+    margin-top: 4%;
+    display: flex;
+    justify-content:space-between;
+    align-items: stretch;
+}
+
+.calander .days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    width: 100%;
+
+    height: 60px;
+    width: 60px;
+}
+
+
+.dayNumber{
+    text-align: center;
+    height: 70%;
+    color: #4C5862;
+}
+
+#monday .dayNumber,
+#monday .dayName{
+    color: #109CF1;
+    opacity: 1;
+}
+.days:hover .dayNumber{
+  background-color:#109CF1 ;
+  color: white;
+
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+
+  cursor: pointer;
+}
+.dayName{
+    color: #334D6E;
+    opacity: 0.5;
+}
+
+.days:hover .dayName{
+  color: #109CF1;
+  opacity: 1;
+}
+.days:active .dayName{
+    color: #109CF1;
+  }
+
+.days:active .dayNumber{
+    background-color: #0c71b0 ;
+
+    color: white;
+
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+
+#monday:hover .dayNumber{
+color: white;
+}
+
+
+.leftbottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 70%;
+    min-height: 475px;
+
+
+}
+
+.allTasks{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    height: 92%;
+    min-height: 435px;
+
+    padding-left: 3%;
+    padding-right: 3%;
+
+    /* border: 1px solid black; */
+}
+
+.taskCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    
+    height: 27%;
+    min-height: 118px;
+    background-color: #ffff;
+
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.taskCard:hover{
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+        cursor: pointer;
+}
+
+
+
+.tasktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    height: 60%;
+}
+
+.task-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 80%;
+}
+.task-type{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.task-title h5 {
+    margin: 0px;
+    width: 88%;
+    min-height: 27px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-size: 1.1em;
+    color: #323C47;
+    font-weight: 500;
+}
+
+.task-title h6{
+    margin: 0px;
+    margin-top: 0.5%;
+
+    font-size: 1em;
+}
+
+
+.due {
+    display: flex;
+    gap: 5px;
+    color: #4C5862;
+    font-weight: 400;
+    font-size: 1em;
+    height: min-content;
+}
+
+#dueTitle {
+    opacity: 0.5;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+
+    color: #707683;
+    font-size: 0.9em;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 50%;
+}
+
+.task-type small {
+    color: #90A0B7;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.taskbottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.taskCard .status-button{
+    background-color: #2ED47A;
+    color: white;
+
+    font-weight: 300;
+
+    border-radius: 5px;
+    
+    padding-right: 8px;
+    padding-left: 8px;
+
+    padding-top: 3px;
+    padding-bottom: 5px;
+
+    min-height: 30.5px;
+    min-width: 100.65px;
+}
+
+.editAndStatus {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.editAndDelete{
+    display: flex;
+}
+
+.editDeleteIcon{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.editAndStatus .editDeleteIcon{
+    display: none;
+}
+
+
+.taskCard:hover .editDeleteIcon{
+    display: flex;
+    align-items: center;
+    display:inline;
+}
+
+
+
+.editDeleteIcon:hover path{
+    fill: #109CF1;
+}
+.editDeleteIcon:active path{
+    fill: #0c71b0;
+}
+
+#task2 .status-button {
+    background-color: #F7685B;
+    justify-content: center;
+    text-align: center;
+}
+
+.leftbottom img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.show-more {
+    color: #109CF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+}
+.show-more h5{
+    margin-top: 0%;
+    margin-bottom: 2.5%;
+}
+
+.show-more h5:hover {
+    cursor: pointer;
+    color: #0c71b0;
+
+}
+
+.right-container {
+    height: 100%;
+    min-height: 680px;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.graph-title{
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color:#192A3E;    
+    font-size:1em;
+    font-weight: 500;
+    text-align: start;
+
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.right-top,
+.right-bottom{
+    background-color: white;
+
+    height: 48%;
+    width: 100%;
+
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.129);
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 2.5%;
+    
+}
+
+.right-top .closedDeals{
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 4%;
+
+    height: 10%;
+    width: 100%;
+}
+
+.closedDeals small{
+    background-image: url(./attachments/tasks_img/Ellipse\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 5%;
+}
+
+.deals,
+.tasksGraph{
+    height: 80%;
+    width: 100%;
+
+    padding: 4%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.deals{
+    padding-top: 2%;
+}
+
+.tasksGraph{
+    height: 90%;
+}
+
+.deals img,
+.tasksGraph img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    .main-container{
+        background-color: white;
+        height: 100%;
+    }
+
+    .searchIcon{
+        padding-left: 6%;
+    }
+    .searchText{
+        padding-left: 15%;
+    }
+
+    .left-container{
+        box-shadow: none;
+        border-radius: 0;
+        height: 100%;
+    }
+
+    .calander{
+        display: none;
+    }
+
+    .leftop{
+        min-height: fit-content;
+        height: 15%;
+    }
+
+    .completed {
+      font-size: 0.9em;
+    }
+    .completed label{
+        margin-right: 0px;
+    }
+
+    
+    .progress{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+    
+    .taskCard{
+        padding: 5%;
+    }
+
+    .profile-name{
+        width: 55%;
+    }
+    
+
+    .right-container{
+        width: 100%;
+    }
+
+    .right-top,
+    .right-bottom{
+     box-shadow: none;
+    }
+
+    .graph-title h5{
+        display: none;
+    }
+    .graph-title{
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .show-more{
+        display: none;
+    }
+
+    .right-container{
+        width: 100%;
+        margin-top:-50%;
+    }
+
+}
